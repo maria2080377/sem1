@@ -1,0 +1,23 @@
+#include <iostream>         //Задача 6
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "RU");
+    int a;
+    cout << "Введите возраст: ";
+    cin >> a;
+    if (a < 18 && a>0) {
+        cout << "Возраст меньше 18 лет";
+    }
+    else if (a >= 18 && a <= 60) {
+        cout << "Возраст от 18 и до 60 лет";
+    }
+    else if (a > 60) {
+        cout << "Возраст больше 60 лет";
+
+    }
+    else {
+        cout << "Неправильно введён возраст";
+    }
+    return 0;
+}
