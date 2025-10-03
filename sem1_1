@@ -1,0 +1,15 @@
+#include <iostream>      //Задача 1
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RU");
+	int a;
+	cout << "Введите длину в сантиметрах: ";
+	cin >> a;
+	cout << "Количество метров: "<<a/100<<","<<" количество сантиметров: "<<a%100;
+
+	return 0;
+}
+
+
+
+
