@@ -1,0 +1,13 @@
+#include <iostream>      //Задача 2
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RU");
+	int a,b;
+	cout << "Введите длину: ";
+	cin >> a;
+	cout << "Введите ширину: ";
+	cin >> b;
+	cout << "Площадь прямоугольника: "<<a*b;
+
+	return 0;
+}
