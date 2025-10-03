@@ -1,0 +1,26 @@
+#include <iostream>        //Задача 8
+#include <string>
+using namespace std;
+ 
+int main() {
+    setlocale(LC_ALL, "RU");
+
+
+    string s;
+    int suma = 0;
+
+    getline(cin, s);
+
+    string buk = "aeiouAEIOU";
+
+    for (char el : s) {
+        for (char glas : buk) {
+            if (el == glas) {
+                suma++;
+            }
+        }
+    }
+
+    cout << "Гласных букв: " << suma;
+    return 0;
+}
